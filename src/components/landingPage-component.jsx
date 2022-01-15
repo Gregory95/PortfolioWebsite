@@ -21,7 +21,11 @@ class LandingPage extends Component {
                     <div className="right">
                         <div className="home-intro">
                             <p>Hello i am..</p>
+                            <div className="avatar-mobile">
+                                <img src={myPhoto} alt="me" />
+                            </div>
                         </div>
+
                         <div className="home-header">
                             <h1>Grigoris Kokozidis</h1>
                         </div>
