@@ -3,6 +3,15 @@ import '../assets/styles/landingPage.css';
 import myPhoto from '../assets/images/me.jpg';
 class LandingPage extends Component {
 
+    handleScrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            /* you can also use 'auto' behaviour
+               in place of 'smooth' */
+        });
+    }
+
     render() {
 
         const user = {
@@ -22,7 +31,7 @@ class LandingPage extends Component {
                         <div className="home-intro">
                             <p>Hello i am..</p>
                             <div className="avatar-mobile">
-                                <img src={myPhoto} alt="me" />
+                                <img onClick={this.handleScrollTop} src={myPhoto} alt="me" />
                             </div>
                         </div>
 
