@@ -23,18 +23,23 @@ export default function NavBar() {
     }, [])
 
     return (
-        <nav>
-            {(toggleMenu || screenWidth > 740) && (
-                <ul className="list">
-                    <li className="items"><a href="#home">Home</a></li>
-                    <li className="items"><a href="#about">About</a></li>
-                    <li className="items"><a href="#projects">Projects</a></li>
-                    <li className="items"><a href="#skills">Skills</a></li>
-                    <li className="items"><a href="#contact">Contact Me</a></li>
-                </ul>
-            )}
+        <header>
+            <nav className="nav navbar">
+                <div className="navbar-brand">
+                    <a href="#home"><span id="grigoris">G</span>rigoris</a>
+                </div>
+                {(toggleMenu || screenWidth > 940) && (
+                    <ul className="list">
+                        <li className="items"><a href="#home">Home</a></li>
+                        <li className="items"><a href="#about">About</a></li>
+                        <li className="items"><a href="#projects">Projects</a></li>
+                        <li className="items"><a href="#skills">Skills</a></li>
+                        <li className="items"><a href="#contact">Contact Me</a></li>
+                    </ul>
+                )}
 
-            <button className="btn" onClick={toggleNav}><div></div></button>
-        </nav>
+                <button className="hamburgerBtn" onClick={toggleNav}><div></div></button>
+            </nav>
+        </header>
     );
 }

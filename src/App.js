@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from './components/navbar-component';
-import './App.css';
 import LandingPage from './components/landingPage-component';
+import bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
+
 
 class App extends Component {
   render() {
@@ -9,16 +11,9 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        <LandingPage />
-        {/* 
-        <main className="container">
-          <Counters
-            counters={this.state.counters}
-            onReset={this.handleReset}
-            onIncrement={this.handleIncrement}
-            onDelete={this.handleDelete}
-          />
-        </main> */}
+        <main>
+          <LandingPage />
+        </main>
       </React.Fragment>
     );
   }
