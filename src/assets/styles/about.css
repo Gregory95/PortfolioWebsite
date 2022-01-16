@@ -21,7 +21,7 @@
 }
 
 .section-description p {
-  margin: 20px 0 50px 100px;
+  margin: 20px 10px 50px 100px;
   color: #fff;
   word-wrap: break-word;
   font-size: 16px;
@@ -226,10 +226,9 @@
 
   .section-description p {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
     word-wrap: break-word;
     display: block;
+    margin: 20px 0 50px 10px;
   }
 
   .main-timeline .date-content {

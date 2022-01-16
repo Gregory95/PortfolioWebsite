@@ -1,0 +1,143 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  background: #052d53;
+  color: white;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.section-title h1 {
+  margin: 100px 0 0 100px;
+  color: #0582ca;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 94px;
+  letter-spacing: 0.3rem;
+}
+
+.projects {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+  width: 30%;
+  display: inline-block;
+  margin: 5rem 1rem 0 2rem;
+}
+
+.projects img {
+  object-fit: fill;
+  height: 300px;
+  width: 300px;
+}
+
+.fadedbox {
+  background-color: #11a8ff;
+  position: absolute;
+  top: 30px;
+  color: white;
+  font-weight: 50px;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  left: 139px;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+}
+
+.projects:hover .fadedbox {
+  opacity: 0.8;
+}
+
+.projects .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+
+.projects .title {
+  font-size: 2em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+
+.projects:hover .title,
+.projects:focus .title {
+  opacity: 1;
+  transform: translateY(20px);
+  -webkit-transform: translateY(90px);
+}
+
+.projects .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.projects .title a strong {
+  cursor: pointer;
+}
+
+.projects:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .fadedbox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    height: 100%;
+  }
+
+  .section-title {
+    margin-top: 5rem;
+  }
+
+  .section-title h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .projects-container {
+    margin-right: 3rem;
+  }
+
+  .projects {
+    margin: 2rem 2rem 0 0.5rem;
+    height: 300px !important;
+    width: 100%;
+  }
+
+  .projects .title {
+    font-size: 20px;
+  }
+
+  .projects:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -22,7 +22,7 @@ class LandingPage extends Component {
         };
 
         return (
-            <div className="hero">
+            <div className="hero" id="home">
                 <div className="splitView">
                     <div className="left">
                         <img src={myPhoto} alt="me" />

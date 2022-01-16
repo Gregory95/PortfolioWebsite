@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+
 import '../assets/styles/navbar.css';
 
 export default function NavBar() {
@@ -26,15 +28,15 @@ export default function NavBar() {
         <header>
             <nav className="nav navbar">
                 <div className="navbar-brand">
-                    <a href="#home"><span id="grigoris">G</span>rigoris</a>
+                    <Link className="link" to="home"><span id="grigoris">G</span>rigoris</Link>
                 </div>
                 {(toggleMenu || screenWidth > 940) && (
                     <ul className="list">
-                        <li className="items"><a href="#home">Home</a></li>
-                        <li className="items"><a href="#about">About</a></li>
-                        <li className="items"><a href="#projects">Projects</a></li>
-                        <li className="items"><a href="#skills">Skills</a></li>
-                        <li className="items"><a href="#contact">Contact Me</a></li>
+                        <li className="items"><Link className="link" to="home">Home</Link></li>
+                        <li className="items"><Link className="link" to="about">About</Link></li>
+                        <li className="items"><Link className="link" to="projects">Projects</Link></li>
+                        <li className="items"><Link className="link" to="skills">Skills</Link></li>
+                        <li className="items"><Link className="link" to="contact">Contact Me</Link></li>
                     </ul>
                 )}
 
