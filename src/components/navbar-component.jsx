@@ -32,11 +32,11 @@ export default function NavBar() {
                 </div>
                 {(toggleMenu || screenWidth > 940) && (
                     <ul className="list">
-                        <li className="items"><Link className="link" to="home">Home</Link></li>
-                        <li className="items"><Link className="link" to="about">About</Link></li>
-                        <li className="items"><Link className="link" to="projects">Projects</Link></li>
-                        <li className="items"><Link className="link" to="skills">Skills</Link></li>
-                        <li className="items"><Link className="link" to="contact">Contact Me</Link></li>
+                        <li className="items"><Link className="link" to="home" onClick={toggleNav}>Home</Link></li>
+                        <li className="items"><Link className="link" to="about" onClick={toggleNav}>About</Link></li>
+                        <li className="items"><Link className="link" to="projects" onClick={toggleNav}>Projects</Link></li>
+                        <li className="items"><Link className="link" to="skills" onClick={toggleNav}>Skills</Link></li>
+                        <li className="items"><Link className="link" to="contact" onClick={toggleNav}>Contact Me</Link></li>
                     </ul>
                 )}
 

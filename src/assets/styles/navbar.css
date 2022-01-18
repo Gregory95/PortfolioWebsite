@@ -111,9 +111,13 @@ nav .navbar-brand span#grigoris {
   transform: scale(0);
 }
 
-.hamburgerBtn:focus:not(:focus-visible){
+.hamburgerBtn:focus:not(:focus-visible) {
   outline: none;
   box-shadow: none;
+}
+
+.hamburgerBtn::-moz-focus-inner {
+  border: 0;
 }
 
 @media screen and (max-width: 940px) {
