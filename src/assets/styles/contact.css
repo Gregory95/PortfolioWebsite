@@ -1,0 +1,116 @@
+.main-contact {
+  height: 100%;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  background: #052d53;
+  color: white;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.content-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.contact-left {
+  text-align: left;
+  background: url("../images/contactme.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  color: black;
+}
+
+.contact-right {
+  padding: 25px 40px;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+  min-height: 150px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #2e60cc;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #273bae;
+}
+
+.resultMessage {
+  color: rgb(8, 194, 8);
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .content-box {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+
+  .contact-left {
+    height: 200px;
+  }
+}
