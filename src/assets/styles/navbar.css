@@ -111,7 +111,7 @@ nav .navbar-brand span#grigoris {
   transform: scale(0);
 }
 
-.hamburgerBtn:focus{
+.hamburgerBtn:focus:not(:focus-visible){
   outline: none;
   box-shadow: none;
 }
