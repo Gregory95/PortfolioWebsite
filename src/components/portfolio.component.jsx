@@ -1,5 +1,5 @@
 import React from 'react';
-import PortfolioImage from '../assets/images/Portfolio.PNG';
+import PortfolioImage from '../assets/images/Portfolio.jpg';
 import CovidImage from '../assets/images/covid.jpg';
 import TaxiImage from '../assets/images/cab.jpg';
 import ProjectStyles from '../assets/styles/portfolio.css';

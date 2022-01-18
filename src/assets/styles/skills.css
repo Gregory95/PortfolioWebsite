@@ -1,0 +1,136 @@
+.main {
+  height: 100%;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  background: #052d53;
+  color: white;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.container-fluid h1 {
+  margin: 100px 0 0 100px;
+  color: #0582ca;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 94px;
+  letter-spacing: 0.3rem;
+}
+
+.container-fluid p {
+  margin: 20px 10px 0 100px;
+  color: #fff;
+  word-wrap: break-word;
+  font-size: 16px;
+  width: 50%;
+}
+
+._split {
+  z-index: 1;
+  top: 0;
+  overflow-y: hidden;
+  display: flex;
+}
+
+._left {
+  margin-top: 2%;
+  margin-left: 40px;
+  display: grid;
+  width: 70%;
+}
+
+.skills-holder {
+  width: 50%;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  display: block;
+}
+
+.skill-holder img,
+span {
+  max-height: 80px !important;
+  max-width: 80px !important;
+  margin: 10px 20px 20px 10px;
+  font-size: 16px;
+}
+
+._right {
+  width: 30%;
+  margin-top: 5%;
+  margin-right: 30px;
+  float: right;
+}
+
+._right img {
+  max-width: 600px;
+  border-radius: 50px;
+  object-fit: cover;
+  float: right;
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    height: 100%;
+  }
+
+  .container-fluid {
+    margin-top: 5rem;
+  }
+
+  .container-fluid h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    margin: 100px 0 0 20px;
+  }
+
+  .container-fluid p {
+    width: 100%;
+    word-wrap: break-word;
+    display: block;
+    margin: 20px 0 50px 10px;
+  }
+
+  ._split {
+    overflow: hidden;
+    columns: 1;
+  }
+
+  ._left {
+    margin-top: 0.5rem 0 0 0.5rem;
+    width: 100%;
+  }
+
+  .skills-holder {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skill-holder img,
+  span {
+    max-height: 80px !important;
+    max-width: 80px !important;
+    margin: 15px 10px 10px 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .skill-holder span {
+    display: none;
+  }
+
+  ._right {
+    display: none;
+  }
+}

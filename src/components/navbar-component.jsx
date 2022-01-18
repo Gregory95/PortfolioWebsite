@@ -26,7 +26,7 @@ export default function NavBar() {
 
     return (
         <header>
-            <nav className="nav navbar">
+            <nav className="nav navbar fixed-top">
                 <div className="navbar-brand">
                     <Link className="link" to="home"><span id="grigoris">G</span>rigoris</Link>
                 </div>
