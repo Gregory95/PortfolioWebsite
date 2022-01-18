@@ -1,4 +1,4 @@
-.main {
+.main-skills {
   height: 100%;
   width: 100%;
   font-family: Poppins, sans-serif;
@@ -54,10 +54,14 @@
   display: block;
 }
 
-.skill-holder img,
-span {
+.skill-holder img {
   max-height: 80px !important;
   max-width: 80px !important;
+  margin: 10px 20px 20px 10px;
+  font-size: 16px;
+}
+
+.skill-holder span {
   margin: 10px 20px 20px 10px;
   font-size: 16px;
 }
@@ -77,10 +81,6 @@ span {
 }
 
 @media screen and (max-width: 991px) {
-  .main {
-    height: 100%;
-  }
-
   .container-fluid {
     margin-top: 5rem;
   }
@@ -117,10 +117,13 @@ span {
     padding: 0;
   }
 
-  .skill-holder img,
-  span {
+  .skill-holder img {
     max-height: 80px !important;
     max-width: 80px !important;
+    margin: 15px 10px 10px 10px;
+  }
+
+  .skill-holder span {
     margin: 15px 10px 10px 10px;
     font-size: 14px;
     text-align: center;

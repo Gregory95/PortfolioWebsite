@@ -23,7 +23,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className="main" id="portfolio">
+            <div className="main-portfolio" id="portfolio">
                 <div className="section-title">
                     <h1>Portfolio</h1>
                 </div>

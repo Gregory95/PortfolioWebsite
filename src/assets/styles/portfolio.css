@@ -1,4 +1,4 @@
-.main {
+.main-portfolio {
   height: 100%;
   width: 100%;
   font-family: Poppins, sans-serif;
@@ -105,7 +105,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .main {
+  .main-portfolio {
     height: 100%;
   }
 

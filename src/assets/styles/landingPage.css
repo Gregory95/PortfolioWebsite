@@ -211,7 +211,16 @@
     animation: zoom-in 1.5s ease infinite;
   }
 
-  @keyframes zoom-in{
+  .avatar-mobile img:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .avatar-mobile img::-moz-focus-inner {
+    border: 0;
+  }
+
+  @keyframes zoom-in {
     0% {
       transform: scale(1.2);
     }

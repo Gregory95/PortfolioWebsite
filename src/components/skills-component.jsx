@@ -18,7 +18,7 @@ class Skills extends React.Component {
 
     render() {
         return (
-            <div className="main" id="skills">
+            <div className="main-skills" id="skills">
                 <div className='container-fluid'>
                     <h1 className="entity-title section-title">Tech Stack</h1>
                     <p>Here is my favorite Tech Stack, languages and frameworks that I use every day in most of my projects.
@@ -58,8 +58,8 @@ class Skills extends React.Component {
                                 <div className="row">
                                     <div className="col-6">
                                         <div className="skill-holder">
-                                            <img alt="javascript" src={ReactImg} id="react_icon" align="middle" />
-                                            <span id="java">React</span>
+                                            <img alt="react" src={ReactImg} id="react_icon" align="middle" />
+                                            <span id="rt">React</span>
                                         </div>
                                     </div>
                                     <div className="col-6">
@@ -73,13 +73,13 @@ class Skills extends React.Component {
                                     <div className="col-6">
                                         <div className="skill-holder">
                                             <img alt="Dotnet C#" src={Csharp} id="dotnet_icon" align="middle" />
-                                            <span id="Dotnet">C# .NET</span>
+                                            <span id="csharp">C# .NET</span>
                                         </div>
                                     </div>
                                     <div className="col-6">
                                         <div className="skill-holder">
-                                            <img alt="Dotnet C#" src={Docker} id="dotnet_icon" align="middle" />
-                                            <span id="Dotnet">Docker</span>
+                                            <img alt="Docker" src={Docker} id="docker_icon" align="middle" />
+                                            <span id="docker">Docker</span>
                                         </div>
                                     </div>
                                 </div>
