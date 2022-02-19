@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../assets/styles/landingPage.css';
-import myPhoto from '../assets/images/me.jpg';
+import myPhoto from '../assets/images/me.png';
 class LandingPage extends Component {
 
     handleScrollTop() {
