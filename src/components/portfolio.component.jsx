@@ -2,6 +2,7 @@ import React from 'react';
 import PortfolioImage from '../assets/images/Portfolio.jpg';
 import CovidImage from '../assets/images/covid.jpg';
 import TaxiImage from '../assets/images/cab.jpg';
+import GeorgiTransferImage from '../assets/images/georgiTaxi.jpg';
 import ProjectStyles from '../assets/styles/portfolio.css';
 
 
@@ -9,7 +10,8 @@ class Portfolio extends React.Component {
     projectLinks = {
         portfolioProject: "",
         covidProject: "https://covidinfotracker.netlify.app",
-        taxiProject: "https://www.taxinakipre.com"
+        taxiProject: "https://www.taxinakipre.netlify.app",
+        georgiProject: "https://www.cyprus-excursions.netlify.app"
     };
 
     handleScrollTop() {
@@ -58,6 +60,17 @@ class Portfolio extends React.Component {
                                 <div className="title text">
                                     <a href={this.projectLinks.taxiProject} target="_blank" rel="noopener">
                                         <strong>Taxi Services </strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projects">
+                            <img alt="Tours and Transfer in Cyprus" src={GeorgiTransferImage}
+                                width="400" height="300" />
+                            <div className="fadedbox">
+                                <div className="title text">
+                                    <a href={this.projectLinks.georgiProject} target="_blank" rel="noopener">
+                                        <strong>Excursions in Cyprus </strong>
                                     </a>
                                 </div>
                             </div>
