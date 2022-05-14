@@ -10,8 +10,8 @@ class Portfolio extends React.Component {
     projectLinks = {
         portfolioProject: "",
         covidProject: "https://covidinfotracker.netlify.app",
-        taxiProject: "https://www.taxinakipre.netlify.app",
-        georgiProject: "https://www.cyprus-excursions.netlify.app"
+        taxiProject: "https://taxinakipre.netlify.app",
+        georgiProject: "https://cyprus-excursions.netlify.app"
     };
 
     handleScrollTop() {
