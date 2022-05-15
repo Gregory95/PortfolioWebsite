@@ -11,7 +11,7 @@ class Portfolio extends React.Component {
         portfolioProject: "",
         covidProject: "https://covidinfotracker.netlify.app",
         taxiProject: "https://taxinakipre.netlify.app",
-        georgiProject: "https://cyprus-excursions.netlify.app"
+        georgiProject: "https://excursion-in-cyprus.netlify.app"
     };
 
     handleScrollTop() {
